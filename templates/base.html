@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Мой сайт{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <img src="/static/World.jpg" alt="Токио">
+        </div>
+        <h1>Путешествия по миру</h1>
+        <nav>
+            <a href="/">Главная</a> |
+            <a href="/about">О нас</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Путеводитель. e-mail: foto@gmail.com</p>
+    </footer>
+</body>
+</html>

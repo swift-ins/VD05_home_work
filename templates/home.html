@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h2>Популярные города</h2>
+<div class="gallery">
+    <div class="city-card">
+        <img src="/static/Paris.jpg"  alt="Париж">
+        <p>Париж, Франция</p>
+    </div>
+    <div class="city-card">
+        <img src="/static/Tokio.jpg" alt="Токио">
+        <p>Токио, Япония</p>
+    </div>
+    <div class="city-card">
+        <img src="/static/Rome.jpg" alt="Рим">
+        <p>Рим, Италия</p>
+    </div>
+    <div class="city-card">
+        <img src="/static/NY.jpg" alt="Нью-Йорк">
+        <p>Нью-Йорк, США</p>
+    </div>
+</div>
+{% endblock %}
